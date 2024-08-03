@@ -40,7 +40,7 @@ export const totalNotificationSelector = selector({
 import axios from "axios";
 import { atom, selector } from "recoil";
 
-export const notifications = atom({
+export const notifications = atom({ // we can understand we are mainly initialising the top bar shit here that upon reoload of the site the intital default state of the top bar is fetched from the backend whenver we want to do something like this we do it like this as shown below >>
     key: "networkAtom",
     default: selector({
         key : "networkAtomsSelector",
